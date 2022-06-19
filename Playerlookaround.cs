@@ -13,11 +13,11 @@ public class Playerlookaround : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   // Code to hide cursor when playing:
+    {
+    
+    // Code to hide cursor when playing:
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-
-       
+        Cursor.lockState = CursorLockMode.Locked;  
     }
 
     // Update is called once per frame
