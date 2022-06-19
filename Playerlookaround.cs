@@ -1,7 +1,9 @@
 using UnityEngine;
 
 public class Playerlookaround : MonoBehaviour
-{   // Code for Mouse Look:
+{   
+
+    // Code for Mouse Look:
     [SerializeField] Transform cam;
     [SerializeField] float sensitivity;
     float headRotation = 0f;
@@ -9,18 +11,14 @@ public class Playerlookaround : MonoBehaviour
     // Code for limiting rotation at x and y axis:
     [SerializeField] float headRotationLimit = 90f;
 
-   
-
-    // Start is called before the first frame update
     void Start()
     {
-    
-    // Code to hide cursor when playing:
+        // Code to hide cursor when playing:
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;  
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         // Code for Mouse Look:
