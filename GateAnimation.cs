@@ -8,7 +8,8 @@ public class GateAnimation : MonoBehaviour
     public Transform gate;           
     public GameObject Robot;
     public Animator anim;
-
+  
+    //This script is for the gates to open when player is nearby and all the enemies are dead;
     void Update()
     {
         float distance = Vector3.Distance(target.position, gate.position);
